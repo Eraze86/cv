@@ -22,15 +22,7 @@ import { Article, Section } from "./styled/section"
 export function Portfolio() {
     return (<>
         <Section>
-            <Article>
-                <h3>css och Sass</h3>
-                En övning i css/sass<br/>
-
-                <ImgPort src={A} />
-                <ImgPort src={B} />
-                <ImgPort src={C} />
-            </Article>
-            <Article>
+        <Article>
                 <h3>Eget projekt</h3>
                 Styled-compnents i react och några enstaka functioner<br/>
                 <a>https://github.com/Eraze86/hemmaodla</a>
@@ -40,7 +32,16 @@ export function Portfolio() {
                 <ImgPort src={H3} />
                 <ImgPort src={H4} />
             </Article>
+</Section>
+<Section>
+            <Article>
+                <h3>css och Sass</h3>
+                En övning i css/sass<br/>
 
+                <ImgPort src={A} />
+                <ImgPort src={B} />
+                <ImgPort src={C} />
+            </Article>
             <Article>
                 <h3>Angular Webshop</h3>
                 <a>https://github.com/Eraze86/angular-webshop</a>
