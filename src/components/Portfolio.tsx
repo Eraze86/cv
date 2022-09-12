@@ -29,6 +29,8 @@ export function Portfolio() {
 
                 <ImgPort src={H1} />
                 <ImgPort src={H2} />
+                </Article>
+                <Article>
                 <ImgPort src={H3} />
                 <ImgPort src={H4} />
             </Article>
