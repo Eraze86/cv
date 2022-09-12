@@ -11,6 +11,10 @@ import L3 from "../img/L3.png"
 import R1 from "../img/R1.png"
 import R2 from "../img/R2.png"
 import R3 from "../img/R3.png"
+import H1 from "../img/H1.png"
+import H2 from "../img/H2.png"
+import H3 from "../img/H3.png"
+import H4 from "../img/H4.png"
 import { ImgPort } from "./styled/img"
 import { Article, Section } from "./styled/section"
 
@@ -25,6 +29,16 @@ export function Portfolio() {
                 <ImgPort src={A} />
                 <ImgPort src={B} />
                 <ImgPort src={C} />
+            </Article>
+            <Article>
+                <h3>Eget projekt</h3>
+                Styled-compnents i react och några enstaka functioner<br/>
+                <a>https://github.com/Eraze86/hemmaodla</a>
+
+                <ImgPort src={H1} />
+                <ImgPort src={H2} />
+                <ImgPort src={H3} />
+                <ImgPort src={H4} />
             </Article>
 
             <Article>
