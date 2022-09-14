@@ -39,13 +39,13 @@ export function Home() {
       <ArticleAboute>
         <H2>Om mig</H2>
 
-        Jag är en kreativ och lösningsorienterad person med lätthet för att söka information. Älskar att skapa, måla, sy, odla och bygga saker. Just nu tycker jag Escape room är jättekul, och skapar gärna egna.<br /> <br />
+        Jag är en kreativ och lösningsorienterad person med lätthet för att söka information. Älskar att skapa, måla, sy och odla. Jag uppskattar utmaning och underhålling i form av Escape room och har även börjat skapa egna Escape room-sällskapsspel.<br /> <br />
 
         Jag arbetar bäst när jag i lugn och ro får sitta med ett problem, har tillgång till stöd vid behov och har möjligheten att testa mig fram.<br /><br />
 
         Jag har två barn som är 4 och 6 år gamla, sambo och en katt. Spenderar gärna min fritid i hemmet, trädgården eller på äventyr i skogen med barnen. <br /><br />
 
-        En viktigt punkt för mig vid LIA, är att det finns möjlighet att arbeta hemifrån.
+        En viktig punkt för mig vid LIA är att det finns möjlighet för arbete hemmifrån vid behov.
       </ArticleAboute>
     </Section>
   </>
