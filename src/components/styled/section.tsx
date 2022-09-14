@@ -4,17 +4,18 @@ export const Section= styled.section`
 color: black;
 padding: 1rem;
 margin: 1rem;
-
-
 @media (min-width: 768px) {
     position: static;
-
 }
 `
-
 export const SectionPort= styled.section`
 padding: 1rem;
 margin: 1rem;
+`
+
+export const SectionEd= styled.section`
+display: flex;
+flec-direction: row;
 `
 
 export const ArticleFront = styled.article`
@@ -37,7 +38,7 @@ box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.5);
 margin: auto;
 @media (min-width: 768px) {
     position: absolute;
-    right: -2rem;
+    right: 0rem;
     top: 12rem;
     border-radius: 1rem 0rem 0rem 1rem;
     }
