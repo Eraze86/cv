@@ -1,78 +1,77 @@
 import styled from "styled-components";
 
 export const Section= styled.section`
-
-display: flex;
-flex-wrap: wrap;
+color: black;
+padding: 1rem;
 margin: 1rem;
+
+
 @media (min-width: 768px) {
-    flex-wrap: nowrap;
-    padding: 1rem;
-    margin: 1rem;
- 
+    position: static;
+
 }
 `
 
-export const SectionOverlap= styled.section`
-
-display: flex;
-flex-wrap: wrap;
+export const SectionPort= styled.section`
+padding: 1rem;
 margin: 1rem;
+`
+
+export const ArticleFront = styled.article`
+
+background: #FFB4A2;
+box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.5);
+padding: 1rem 2rem;
+
 @media (min-width: 768px) {
-    
-    flex-wrap: nowrap;
-    padding: 1rem;
     margin: 1rem;
- 
+ width: 40vw;
+    left: 4rem;
+    }
 }
-
 `
-export const Article = styled.article`
-margin: 0rem 1rem 0rem 1rem;
-width: 20rem;
+export const ArticleLia = styled.article`
+
+background: #6D6875;
+box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.5);
+margin: auto;
 @media (min-width: 768px) {
-width: 50%;
-    margin: 0rem 2rem;
- 
+    position: absolute;
+    right: -2rem;
+    top: 12rem;
+    border-radius: 1rem 0rem 0rem 1rem;
+    }
+    H3{
+        margin: 0;
+    }
 }
-
 `
-export const ArticleCon = styled.article`
-margin: 0rem 1rem 0rem 1rem;
-width: 20rem;
-font-size: 1.2rem;
+export const ArticleAboute = styled.article`
+
+padding: 1rem 2rem;
+
+background: #FFCDB2;
+box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.5);
 @media (min-width: 768px) {
-width: 30rem;
-padding-top: 3rem;
-    margin: auto;
-    
- 
-}
-
+    position: absolute;
+    margin: 1rem;
+    width: 35vw;
+    right: 0rem;
+    top: 25rem;
+    }
 `
 
-export const P = styled.p`
+export const ArticlePort = styled.article`
+display: flex;
+flex-direction: column;
 
-margin: 2rem 0rem 0rem 0rem;
+
 @media (min-width: 768px) {
-    margin: 2rem 0rem 0rem 0rem;
- 
-}
-`
-
-export const P1 = styled.p`
-
-color: #F2668B;
-`
-export const A = styled.a`
-
-color: #F2668B;
-text-decoration: none;
-:hover{
-    color: #03A688;
-}
-@media (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
    
- 
+    
 }
+
 `
+

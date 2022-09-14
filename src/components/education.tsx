@@ -1,9 +1,9 @@
-import { Article, Section } from "./styled/section";
+import { ArticleFront, Section } from "./styled/section";
 
 export function Education() {
     return (<>
         <Section>
-            <Article>
+            <ArticleFront>
                 <h3>Utbildning</h3>
                 <ul>
                     <li>Frontend developer
@@ -24,8 +24,8 @@ export function Education() {
                     <li>Webdesign, desktop
                         Information & layout V2009</li>
                 </ul>
-            </Article>
-            <Article>
+            </ArticleFront>
+            <ArticleFront>
             <h3>Erfarenhet</h3>
                 <ul>
                     <li>Pottan AB  (Tidigare Godsinlösen) 2013-Nutid<br/>
@@ -35,7 +35,7 @@ export function Education() {
                     <li>Tidigare Arbeten<br/>
                         Ströjobb tex lokalvårdare, butikspersonal</li>
                 </ul>
-            </Article>
+            </ArticleFront>
 
         </Section>
 

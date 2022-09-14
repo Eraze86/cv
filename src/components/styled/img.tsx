@@ -7,27 +7,24 @@ margin: 0rem 0.5rem;
 `
 
 export const ImgMe= styled.img`
-display: none;
 
+margin: 0rem 1rem 2rem 2rem;
+border-radius: 10px;
+height: 5rem;
+width: 5rem;
 @media (min-width: 768px) {
-    position: absolute;
-    top: 8rem;
-    right: 7rem;
-    border: 2px solid #03A688;
-    border-radius: 20%;
-    display: inline;
-    height: 15rem;
-    width: 15rem;
+
+
+
+
  
 }
 `
 export const ImgPort= styled.img`
 
-width: 15rem;
-padding: 1rem;
+height: auto;
+padding: 1rem 1rem 1rem 0rem;
 @media (min-width: 768px) {
-
     width: 30rem;
- 
 }
 `
