@@ -15,7 +15,12 @@ margin: 1rem;
 
 export const SectionEd= styled.section`
 display: flex;
-flec-direction: row;
+padding: 1rem;
+margin: 1rem;
+flex-direction: column;
+@media (min-width: 768px) {
+    flex-direction: row;
+}
 `
 
 export const ArticleFront = styled.article`
@@ -23,11 +28,12 @@ export const ArticleFront = styled.article`
 background: #FFB4A2;
 box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.5);
 padding: 1rem 2rem;
-
+margin: 1rem;
 @media (min-width: 768px) {
-    margin: 1rem;
+    
  width: 40vw;
     left: 4rem;
+   
     }
 }
 `

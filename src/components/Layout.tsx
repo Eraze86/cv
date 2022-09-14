@@ -30,7 +30,7 @@ export function Layout() {
 
     <P>Github:<br/>
         <A href="https://github.com/Eraze86">https://github.com/Eraze86</A></P>
-        <P>LinkedIn:<br/>
+        <P>Linkedin:<br/>
             <A href="https://www.linkedin.com/in/therese-rosvall">https://www.linkedin.com/in/therese-rosvall</A></P>
             
             </Contact>
