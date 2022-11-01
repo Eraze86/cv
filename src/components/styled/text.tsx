@@ -22,6 +22,12 @@ font-size: 2rem;
 margin: 0rem 0rem 1rem 0rem;
 
 `
+export const H4 = styled.h4`
+font-size: 1rem;
+font-weight: 500;
+margin: 0rem 0rem 0.5rem 0rem;
+
+`
 
 export const H3Lia = styled.h3`
 font-weight: 400;
