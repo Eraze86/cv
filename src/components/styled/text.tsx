@@ -18,14 +18,14 @@ Margin: auto;
 `
 
 export const H2 = styled.h2`
-font-size: 2.6rem;
+font-size: 2rem;
 margin: 0rem 0rem 1rem 0rem;
 
 `
 
-export const H3 = styled.h3`
+export const H3Lia = styled.h3`
 font-weight: 400;
-font-size: 1.5rem;
+font-size: 1.2rem;
 line-height: 36px;
 padding: 1rem;
 margin: 1rem;

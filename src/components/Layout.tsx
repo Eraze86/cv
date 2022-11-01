@@ -3,7 +3,7 @@ import { Contact, Footer } from "./styled/footer";
 import {  Header, Nav } from "./styled/header";
 import { ImgMe } from "./styled/img";
 import { LinkNav } from "./styled/link";
-import { A, H1, H3, P } from "./styled/text";
+import { A, H1, H3Lia, P } from "./styled/text";
 import me from "../img/profilbild.jpg"
 
 
@@ -19,7 +19,7 @@ export function Layout() {
             </Nav>
         </Header>
         <Outlet></Outlet>
-        <H3>Kontakta</H3>
+        <H3Lia>Kontakta</H3Lia>
 <Footer>
 
     <Contact>

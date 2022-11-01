@@ -8,6 +8,18 @@ margin: 1rem;
     position: static;
 }
 `
+export const SectionMe= styled.section`
+color: black;
+padding: 1rem;
+margin: 1rem;
+display: flex;
+flex-direction: column;
+
+@media (min-width: 768px) {
+    flex-direction: row;
+}
+`
+
 export const SectionPort= styled.section`
 padding: 1rem;
 margin: 1rem;
@@ -25,28 +37,28 @@ flex-direction: column;
 
 export const ArticleFront = styled.article`
 
-background: #FFB4A2;
+background:#dbb4bc;
 box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.5);
 padding: 1rem 2rem;
 margin: 1rem;
 @media (min-width: 768px) {
     
- width: 40vw;
-    left: 4rem;
+
    
     }
 }
 `
 export const ArticleLia = styled.article`
-
+text-align: center;
 background: #6D6875;
 box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.5);
 margin: auto;
 @media (min-width: 768px) {
     position: absolute;
-    right: 0rem;
-    top: 12rem;
-    border-radius: 1rem 0rem 0rem 1rem;
+    right: 1rem;
+    top: 4rem;
+    text-align: left;
+   
     }
     H3{
         margin: 0;
@@ -56,15 +68,11 @@ margin: auto;
 export const ArticleAboute = styled.article`
 
 padding: 1rem 2rem;
-
-background: #FFCDB2;
+margin: 1rem;
+background: #e8cabb;
 box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.5);
 @media (min-width: 768px) {
-    position: absolute;
-    margin: 1rem;
-    width: 35vw;
-    right: 0rem;
-    top: 25rem;
+    
     }
 `
 

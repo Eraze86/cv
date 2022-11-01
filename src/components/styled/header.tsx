@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Header = styled.header`
-height: 6rem;
+height: 5rem;
 position: static;
 margin: 0;
 padding: 1rem;
