@@ -15,17 +15,29 @@ import H1 from "../img/H1.png"
 import H2 from "../img/H2.png"
 import H3 from "../img/H3.png"
 import H4 from "../img/H4.png"
+import K1 from "../img/K1.png"
+import K2 from "../img/K2.png"
 import { ImgPort } from "./styled/img"
 import {  ArticlePort, SectionPort } from "./styled/section"
 import { A } from "./styled/text"
 
-
+//loppa igenom istället, måste fixa
 export function Portfolio() {
     return (<>
+ 
+    <SectionPort>
+        <h3>Kubikräknare , sammarbeta med Mikaela</h3>
+            <A>https://cubic-calculator.vercel.app/</A>
+            <ArticlePort>
+                <ImgPort src={K1} />
+                <ImgPort src={K2} />
+
+            </ArticlePort>
+            </SectionPort>
         <SectionPort>
         <h3>Eget projekt</h3>
-   <A>https://github.com/Eraze86/hemmaodla</A>
-        <ArticlePort>
+            <A>https://github.com/Eraze86/hemmaodla</A>
+            <ArticlePort>
                 <ImgPort src={H1} />
                 <ImgPort src={H2} />
                 <ImgPort src={H3} />
