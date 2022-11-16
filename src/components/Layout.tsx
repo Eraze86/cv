@@ -1,33 +1,39 @@
-import { Outlet } from "react-router-dom";
+
 import { Contact, Footer } from "./styled/footer";
-import { Header, Nav } from "./styled/header";
-import { ImgMe } from "./styled/img";
-import { LinkNav } from "./styled/link";
-import { A, H1, H2, H3Lia, P } from "./styled/text";
+import { Header, HeaderDiv, Nav } from "./styled/header";
+import { ImgLeaf, ImgMe } from "./styled/img";
+import { A } from "./styled/link";
+import { H2,  P } from "./styled/text";
 import me from "../img/profilbild.jpg"
-import { ArticleLia, Section } from "./styled/section";
+import  leaf from "../img/leaf.jpg";
+
+import { Home } from "./Home";
+import { Education } from "./education";
+import { Portfolio } from "./Portfolio";
+import { useState } from "react";
+import { Menu } from "./menu";
+import { Construct } from "./styled/section";
 
 
 export function Layout() {
+    const [navBar, setNavBar] = useState(true)
+
     return (<>
         <Header>
-            <H1>Therese Rosvall</H1>
-            <Nav>
-                <LinkNav to="/">Home</LinkNav>
-                <LinkNav to="/education">Education</LinkNav>
-                <LinkNav to="/portfolio">Portfolio</LinkNav>
-
-            </Nav>
-            <Section>
-                <ArticleLia>
-                    <H3Lia>Söker LIA 13 feb - 2 jun 2023<br />
-                        Trelleborg/Malmö/Distans </H3Lia>
-                </ArticleLia>
-            </Section>
+     
+            <HeaderDiv>
+          <ImgLeaf src={leaf}></ImgLeaf>
+            
+               <Menu/>
+               <Construct>Under Cunstruction</Construct>
+            </HeaderDiv>
         </Header>
-        <Outlet></Outlet>
+        <Home/>
+        <Education/>
+        <Portfolio/>
+        <Contact/>
       
-        <Footer>
+        <Footer id="Contact">
         <H2>Kontakta</H2>
             <Contact>
                 <ImgMe src={me} />

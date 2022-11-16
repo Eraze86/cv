@@ -1,92 +1,98 @@
 import styled from "styled-components";
 
-export const Section= styled.section`
-color: black;
+
+export const SectionHome= styled.section`
 padding: 1rem;
-margin: 1rem;
-@media (min-width: 768px) {
-    position: static;
-}
-`
-export const SectionMe= styled.section`
-color: black;
-padding: 1rem;
-margin: 1rem;
+
 display: flex;
 flex-direction: column;
 
 @media (min-width: 768px) {
     flex-direction: row;
+    margin: 1rem;
+    }
 }
 `
 
 export const SectionPort= styled.section`
+display: flex;
+flex-direction: row;
 padding: 1rem;
 margin: 1rem;
+@media (min-width: 768px) {
+    flex-direction: row;
+
+    flex-wrap: wrap;
+}
 `
 
 export const SectionEd= styled.section`
 display: flex;
 padding: 1rem;
-margin: 1rem;
+
 flex-direction: column;
 @media (min-width: 768px) {
     flex-direction: row;
+    justify-content: flex-end;
+    margin: 1rem;
 }
 `
 
-export const ArticleFront = styled.article`
-
-background:#dbb4bc;
-box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.5);
-padding: 1rem 2rem;
+export const Article = styled.article`
 margin: 1rem;
-@media (min-width: 768px) {
-    
+border: solid 2px #6D9886;
+padding: 1rem;
+border-radius: 1rem;
+font-weight: 400;
 
+@media (min-width: 768px) {
+    margin: 2rem;
+    margin: 0rem 1rem 2rem 1rem;
+    width: 20rem;
    
     }
 }
 `
-export const ArticleLia = styled.article`
-text-align: center;
-background: #6D6875;
-box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.5);
-margin: auto;
-@media (min-width: 768px) {
-    position: absolute;
-    right: 1rem;
-    top: 4rem;
-    text-align: left;
-   
-    }
-    H3{
-        margin: 0;
-    }
-}
-`
-export const ArticleAboute = styled.article`
 
-padding: 1rem 2rem;
-margin: 1rem;
-background: #e8cabb;
-box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.5);
-@media (min-width: 768px) {
-    
-    }
-`
 
-export const ArticlePort = styled.article`
+export const Div = styled.div`
 display: flex;
 flex-direction: column;
-
-
+margin: 1rem;
+border: solid 2px #6D9886;
+padding: 1rem;
+border-radius: 1rem;
+align-items: center;
 @media (min-width: 768px) {
-    flex-direction: row;
-    flex-wrap: wrap;
    
-    
 }
 
 `
+
+export const DivMenu = styled.div`
+position: absolute;
+top: -2rem;
+display: flex;
+flex-direction: column;
+padding: 0.5rem;
+width: 100vw;;
+background-color: #6D9886;
+align-items: flex-start;
+@media (min-width: 768px) {
+   display: none;
+}
+
+`
+export const Construct = styled.div`
+position: absolute;
+top: 6rem;
+text-align: center;
+width: 100vw;
+font-size: 2rem;
+@media (min-width: 768px) {
+    top: 10rem;
+}
+
+`
+
 

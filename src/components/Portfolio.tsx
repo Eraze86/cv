@@ -18,71 +18,52 @@ import H4 from "../img/H4.png"
 import K1 from "../img/K1.png"
 import K2 from "../img/K2.png"
 import { ImgPort } from "./styled/img"
-import {  ArticlePort, SectionPort } from "./styled/section"
-import { A } from "./styled/text"
+import { Div, SectionPort } from "./styled/section"
+import { A } from "./styled/link"
+
 
 //loppa igenom istället, måste fixa
 export function Portfolio() {
+
+    // fetch("./project.json")
+    // .then((response) => response.json())
+    // .then((findresponse)=>{
+    //   console.log(findresponse.title)})
+
+    function bigPic(){
+
+    }
+
     return (<>
  
-    <SectionPort>
-        <h3>Kubikräknare , sammarbeta med Mikaela</h3>
-            <A>https://cubic-calculator.vercel.app/</A>
-            <ArticlePort>
-                <ImgPort src={K1} />
-                <ImgPort src={K2} />
-
-            </ArticlePort>
-            </SectionPort>
-        <SectionPort>
-        <h3>Eget projekt</h3>
-            <A>https://github.com/Eraze86/hemmaodla</A>
-            <ArticlePort>
-                <ImgPort src={H1} />
-                <ImgPort src={H2} />
-                <ImgPort src={H3} />
-                <ImgPort src={H4} />
-            </ArticlePort>
-            </SectionPort>
-            <SectionPort>
-            <h3>css och Sass</h3>
-                En övning i css/sass<br/>
-            <ArticlePort>
-                       <ImgPort src={AB} />
-                <ImgPort src={B} />
-                <ImgPort src={C} />
-            </ArticlePort>
-            </SectionPort>
-            <SectionPort>
-            <h3>Angular Webshop</h3>
-                <a>https://github.com/Eraze86/angular-webshop</a><br/>
-            <ArticlePort>
-
-                <ImgPort src={A1} />
-                <ImgPort src={A2} />
-                <ImgPort src={A3} />
-                <ImgPort src={A4} />
-            </ArticlePort>
-            </SectionPort>
-            <SectionPort>
-            <h3>Databaser my-SQL</h3>
-                <a>https://github.com/Eraze86/notes</a><br/>
-            <ArticlePort>
-
-                <ImgPort src={L1} />
-                <ImgPort src={L2} />
-                <ImgPort src={L3} />
-            </ArticlePort>
-            </SectionPort>
-            <SectionPort>
-            <h3>Restaurang - Jobbade i team</h3>
-                <a>https://github.com/Eraze86/react-restaurang</a><br/>
-            <ArticlePort>
- 
-                <ImgPort src={R1} />
-                <ImgPort src={R2} />
-                <ImgPort src={R3} />
-            </ArticlePort>
+    <SectionPort id="portfolio">
+    <Div>
+        <A href="https://cubic-calculator.vercel.app/">Kubikräknare</A>
+        <ImgPort src={K1} />
+        (Sammarbete med Mikaela)
+    </Div>
+    <Div>
+    <A href="https://github.com/Eraze86/hemmaodla">HemmaOdlat</A>
+        <ImgPort src={H2} />
+        Eget projekt 
+    </Div>
+    <Div>
+        Css och Sass uppgift
+        <ImgPort src={AB} />
+    </Div>
+    <Div>
+    <A href="https://github.com/Eraze86/angular-webshop">Angular webshop</A><br/>
+    <ImgPort src={A1} />
+    </Div>
+    <Div>
+    <A href="https://github.com/Eraze86/notes">My-SQL databas</A><br/>
+    <ImgPort src={L1} />
+    </Div>
+    <Div>
+    <A href="https://github.com/Eraze86/react-restaurang">React - resturang</A><br/>
+    <ImgPort src={R1} />
+    Jobbade i Team
+    </Div>
         </SectionPort>
     </>)
 

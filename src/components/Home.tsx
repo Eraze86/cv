@@ -1,15 +1,14 @@
 
-
-
-import { Section, ArticleFront, ArticleLia, ArticleAboute, SectionMe } from "./styled/section"
-import { H2, H3Lia } from "./styled/text"
+import { Article, SectionHome } from "./styled/section"
+import { H2 } from "./styled/text"
 export function Home() {
+
 
   return (<>
 
 
-    <SectionMe>
-      <ArticleFront>
+    <SectionHome>
+      <Article>
         <H2>Frontend Utvecklare</H2>
 
         Har det senaste året lärt mig grunderna inom
@@ -25,10 +24,10 @@ export function Home() {
         och visuellt tilltalande.<br /><br />
 
         Utöver css grunderna har jag bra koll på react styled component och har testat tailwind.
-      </ArticleFront>
+      </Article>
 
-      <ArticleAboute>
-        <H2>Om mig</H2>
+      <Article>
+        <H2>Vem är jag?</H2>
 
         Jag är en kreativ och lösningsorienterad person med lätthet för att söka information.
         Älskar att skapa, måla, sy och odla. Jag uppskattar utmaning och underhålling i form av
@@ -41,8 +40,8 @@ export function Home() {
         fritid i hemmet, trädgården eller på äventyr i skogen med barnen. <br /><br />
 
         En viktig punkt för mig vid LIA är att det finns möjlighet för arbete hemmifrån vid behov.
-      </ArticleAboute>
-    </SectionMe>
+      </Article>
+    </SectionHome>
   </>
   )
 
