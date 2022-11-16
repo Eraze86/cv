@@ -25,11 +25,6 @@ import { A } from "./styled/link"
 //loppa igenom istället, måste fixa
 export function Portfolio() {
 
-    // fetch("./project.json")
-    // .then((response) => response.json())
-    // .then((findresponse)=>{
-    //   console.log(findresponse.title)})
-
     function bigPic(){
 
     }
