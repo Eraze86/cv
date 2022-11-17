@@ -21,7 +21,7 @@ root.render(
     <Routes>
       <Route path="/" element={<Layout />}>
       <Route index element={<Home />} />
-          <Route path="/portfolio" element={<Extra/>} />
+          <Route path="/portfolio" element={<Home/>} />
 
  
           </Route>
