@@ -1,12 +1,10 @@
 import { useState } from "react"
 import logo from "../img/logo.png";
 import ham from "../img/hamburgare.png";
-import { Nav, NavBar } from "./styled/header";
-import { Logo } from "./styled/img";
+import { Img, Logo } from "./styled/img";
 import { A } from "./styled/link"
-
-import { DivMenu } from "./styled/section";
-import { Img } from "./styled/button";
+import { Nav, NavBar } from "./styled/nav";
+import { DivMenu } from "./styled/div";
 
 
 export function Menu() {
@@ -16,25 +14,30 @@ export function Menu() {
     function handleToggle() {
         setNavbarOpen(!navbarOpen)
     }
+    function scroll(){
+
+    }
     return (<>
         <Nav>
             <Logo src={logo}></Logo>
             <Img  src={ham} onClick={handleToggle}/>
-            {navbarOpen && <DivMenu ><A href="/">Home</A>
-                <A href="#skills">Erfarenhet</A>
-                <A href="#portfolio">Portfolio</A>
-                <A href="#contact">Kontakta</A>
+            {navbarOpen && <DivMenu >
+                <A onClick={scroll} href="#home">Home</A>
+                <A onClick={scroll} href="#skills">Erfarenhet</A>
+                <A onClick={scroll} href="#portfolio">Portfolio</A>
+                <A onClick={scroll} href="#contact">Kontakta</A>
             </DivMenu>}
         </Nav>
    
         <NavBar >
-                <A href="/">Home</A>
-                <A href="#skills">Erfarenhet</A>
+                <A onClick={scroll} href="#home">Home</A>
+                <A onClick={scroll} href="#skills">Erfarenhet</A>
                 <Logo src={logo}></Logo>
-                <A href="#portfolio">Portfolio</A>
-                <A href="#contact">Kontakta</A>
+                <A onClick={scroll} href="#portfolio">Portfolio</A>
+                <A onClick={scroll} href="#contact">Kontakta</A>
        
         </NavBar>
     
     </>)
 }
+

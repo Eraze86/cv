@@ -18,8 +18,9 @@ import H4 from "../img/H4.png"
 import K1 from "../img/K1.png"
 import K2 from "../img/K2.png"
 import { ImgPort } from "./styled/img"
-import { Div, SectionPort } from "./styled/section"
+import { SectionPort } from "./styled/section"
 import { A } from "./styled/link"
+import { Div } from "./styled/div"
 
 
 //loppa igenom istället, måste fixa

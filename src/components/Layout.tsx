@@ -1,25 +1,24 @@
 
 import { Contact, Footer } from "./styled/footer";
-import { Header, HeaderDiv, Nav } from "./styled/header";
+import { Header, HeaderDiv } from "./styled/header";
 import { ImgLeaf, ImgMe } from "./styled/img";
 import { A } from "./styled/link";
 import { H2,  P } from "./styled/text";
 import me from "../img/profilbild.jpg"
 import  leaf from "../img/leaf.jpg";
-
 import { Home } from "./Home";
 import { Education } from "./education";
 import { Portfolio } from "./Portfolio";
 import { useState } from "react";
 import { Menu } from "./menu";
-import { Construct } from "./styled/section";
+import { Construct } from "./styled/div";
 
 
 export function Layout() {
     const [navBar, setNavBar] = useState(true)
 
     return (<>
-        <Header>
+        <Header id="home">
      
             <HeaderDiv>
           <ImgLeaf src={leaf}></ImgLeaf>
@@ -33,7 +32,7 @@ export function Layout() {
         <Portfolio/>
         <Contact/>
       
-        <Footer id="Contact">
+        <Footer id="contact">
         <H2>Kontakta</H2>
             <Contact>
                 <ImgMe src={me} />
