@@ -25,7 +25,7 @@ export function Layout() {
           <ImgLeaf src={leaf}></ImgLeaf>
             
                <Menu/>
-               <Construct>Under Cunstruction</Construct>
+               <Construct>Under Construction</Construct>
             </HeaderDiv>
         </Header>
         <Home/>
