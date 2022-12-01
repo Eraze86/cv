@@ -1,8 +1,9 @@
 import { ImgPort } from "./styled/img"
 import { SectionPort } from "./styled/section"
-import { Div, SingelPage } from "./styled/div"
+import { Div, SingelPage, Text } from "./styled/div"
 import json from "./projekt.json"
 import { useState } from "react"
+import { XButton } from "./styled/button"
 
 export function Portfolio() {
     const [project, setProject] = useState(json);
@@ -46,11 +47,11 @@ export function Portfolio() {
                 {get}
                 {showDiv && <>
                     <SingelPage>
-                        <button onClick={() => setShowDiv(false)}>X</button>
-                        <div><h3>{singel.name}</h3>
+                        <XButton onClick={() => setShowDiv(false)}>X</XButton>
+                        <Text><h3>{singel.name}</h3>
                         <a href={singel.link}>{singel.link}</a><br/>
                         {singel.image}
-                        </div>
+                        </Text>
                     </SingelPage></>}
         </SectionPort>
 

@@ -40,13 +40,20 @@ font-size: 2rem;
 
 export const SingelPage = styled.div`
 
+text-align: right;
 Width: 90vw;
 Height: 50vh;;
 background-color: #282828;
 border: solid 2px #6D9886;
 border-radius: 1rem;
-position: absolute;
-top: -4rem;
+position: fixed;
+top: 13rem;
+@media (min-width: 768px) {
+ 
+}`
+export const Text = styled.div`
+
+text-align: center;
 @media (min-width: 768px) {
  
 }`
