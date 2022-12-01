@@ -39,7 +39,9 @@ export function Home() {
         Jag har två barn som är 4 och 6 år gamla och sambo. Spenderar gärna min
         fritid i hemmet, trädgården eller på äventyr i skogen med barnen. <br /><br />
 
-        En viktig punkt för mig vid LIA är att det finns möjlighet för arbete hemifrån vid behov.
+        Söker LIA med möjlighet för flex , eller jobba hemifrån. Min ena son har en diagnos, och
+        behöver ibland extra stöttning.
+        
       </Article>
     </SectionHome>
   </>
