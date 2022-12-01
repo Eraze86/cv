@@ -27,10 +27,10 @@ height: 5rem;
 width: 5rem;
 `
 export const ImgPort= styled.img`
-height: 10rem;
 width: 10rem;
+
 object-fit: cover;
-padding: 1rem 1rem 1rem 0rem;
+padding: 1rem;
 `
 
 export const Img= styled.img`

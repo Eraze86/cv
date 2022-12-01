@@ -1,13 +1,16 @@
 import styled from "styled-components";
 
 export const Div = styled.div`
+
 display: flex;
 flex-direction: column;
 margin: 1rem;
 border: solid 2px #6D9886;
 padding: 1rem;
 border-radius: 1rem;
+justify-content: space-between;
 align-items: center;
+
 @media (min-width: 768px) {
  
 }`
@@ -33,4 +36,17 @@ width: 100vw;
 font-size: 2rem;
 @media (min-width: 768px) {
     top: 10rem;
+}`
+
+export const SingelPage = styled.div`
+
+Width: 90vw;
+Height: 50vh;;
+background-color: #282828;
+border: solid 2px #6D9886;
+border-radius: 1rem;
+position: absolute;
+top: -4rem;
+@media (min-width: 768px) {
+ 
 }`

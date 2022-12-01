@@ -39,7 +39,7 @@ export function Home() {
         Jag har två barn som är 4 och 6 år gamla och sambo. Spenderar gärna min
         fritid i hemmet, trädgården eller på äventyr i skogen med barnen. <br /><br />
 
-        En viktig punkt för mig vid LIA är att det finns möjlighet för arbete hemmifrån vid behov.
+        En viktig punkt för mig vid LIA är att det finns möjlighet för arbete hemifrån vid behov.
       </Article>
     </SectionHome>
   </>

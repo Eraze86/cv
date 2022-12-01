@@ -1,6 +1,6 @@
 import { useState } from "react"
-import logo from "../img/logo.png";
-import ham from "../img/hamburgare.png";
+import logo from "../components/assets/logo.png";
+import ham from "../components/assets/hamburgare.png";
 import { Img, Logo } from "./styled/img";
 import { A } from "./styled/link"
 import { Nav, NavBar } from "./styled/nav";

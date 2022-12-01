@@ -9,3 +9,15 @@ margin: 0.5rem;
 }
 `
 
+export const Link = styled.a`
+Color: white;
+font-size: 1.5rem;
+text-align: center;
+text-decoration: none;
+margin: 0.5rem;
+width: 15rem;
+:hover{
+    text-decoration:underline;
+}
+`
+

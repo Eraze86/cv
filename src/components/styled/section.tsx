@@ -11,13 +11,15 @@ flex-direction: column;
 }`
 
 export const SectionPort= styled.section`
+Position: relative;
 scroll-margin-top: 4rem;
 display: flex;
 flex-direction: row;
+justify-content: center;
 padding: 1rem;
 margin: 1rem;
 @media (min-width: 768px) {
-    flex-direction: row;
+
     flex-wrap: wrap;
 }`
 

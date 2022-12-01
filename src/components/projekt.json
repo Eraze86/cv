@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "Name": "Kubikräknare", 
+    "link": "https://cubic-calculator.vercel.app/",
+    "description": "Sammarbete med Mikaela", 
+    "image":[ "../img/K1.png", "../img/K2.png" ]
+  },
+  {
+    "id": 2,
+    "Name": "HemmaOdlat", 
+    "link": "https://github.com/Eraze86/hemmaodla",
+    "description": "Eget projekt", 
+    "image":[ "../img/H1.png", "../img/H2.png", "../img/H3.png", "../img/H4.png"]
+  },
+  {
+    "id": 3,
+    "Name": "Css & Sass",
+    "link": "",
+    "description": "Lärde oss hantera styling", 
+    "image":[ "../img/css1.png", "../img/css2.png", "../img/css3.png"]
+  },
+  {
+    "id": 4,
+    "Name": "Angular webshop",
+    "link": "https://github.com/Eraze86/angular-webshop",
+    "description": "Testade på att arbeta med Angular",
+    "image":[ "../img/A1.png", "../img/A2.png", "../img/A3.png", "../img/A4.png"]
+  },
+  {
+    "id": 5,
+    "Name": "My-SQL databas", 
+    "link": "https://github.com/Eraze86/notes",
+    "description": "Product 2", 
+    "image":[ "../img/L1.png", "../img/L2.png", "../img/L3.png"]
+  },
+  {
+    "id": 6,
+    "Name": "React - resturang",
+    "link": "https://github.com/Eraze86/react-restaurang", 
+    "description": "Product 5", 
+    "image":[ "../img/R1.png", "../img/R2.png", "../img/R3.png"]
+  }
+]

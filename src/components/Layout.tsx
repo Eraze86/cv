@@ -1,22 +1,18 @@
-
 import { Contact, Footer } from "./styled/footer";
 import { Header, HeaderDiv } from "./styled/header";
 import { ImgLeaf, ImgMe } from "./styled/img";
 import { A } from "./styled/link";
 import { H2,  P } from "./styled/text";
-import me from "../img/profilbild.jpg"
-import  leaf from "../img/leaf.jpg";
+import me from "../components/assets/profilbild.jpg"
+import  leaf from "../components/assets/leaf.jpg";
 import { Home } from "./Home";
 import { Education } from "./education";
 import { Portfolio } from "./Portfolio";
-import { useState } from "react";
 import { Menu } from "./menu";
 import { Construct } from "./styled/div";
 
 
 export function Layout() {
-    const [navBar, setNavBar] = useState(true)
-
     return (<>
         <Header id="home">
      
