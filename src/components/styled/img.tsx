@@ -27,17 +27,19 @@ height: 5rem;
 width: 5rem;
 `
 export const ImgPort= styled.img`
-width: 10rem;
-
+width: 15rem;
 object-fit: cover;
 padding: 1rem;
-`
+@media (min-width: 768px) {
+    width: 10rem;
+}`
+
 
 export const Img= styled.img`
 width: 1.5rem;
 height: 1.5rem;
 margin-right: 1rem;
-z-index: 2;
+z-index: 9;
 object-fit: contain;
 background-color: #6D9886;
 border: solid 1px black;
@@ -45,13 +47,15 @@ border-radius: 1rem;
 padding: 0.5rem;
 }`
 
-export const ImgSingel= styled.img`
-width: 40rem;
-height: auto;
-margin: 1rem;
-z-index: 2;
-object-fit: contain;
 
-border-radius: 1rem;
-padding: 0.5rem;
+
+export const ImgPic = styled.img`
+
+
+width: 8rem;
+margin: 0.5rem;
+@media (min-width: 768px) {
+    
+ width: 24rem;
+
 }`

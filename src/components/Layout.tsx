@@ -1,7 +1,7 @@
 import { Contact, Footer } from "./styled/footer";
 import { Header, HeaderDiv } from "./styled/header";
 import { ImgLeaf, ImgMe } from "./styled/img";
-import { A } from "./styled/link";
+import { AFooter } from "./styled/link";
 import { H2,  P } from "./styled/text";
 import me from "../components/assets/profilbild.jpg"
 import  leaf from "../components/assets/leaf.jpg";
@@ -36,9 +36,9 @@ export function Layout() {
                     0704664185</P>
 
                 <P>Github:<br />
-                    <A href="https://github.com/Eraze86">https://github.com/Eraze86</A></P>
+                    <AFooter href="https://github.com/Eraze86">https://github.com/Eraze86</AFooter></P>
                 <P>Linkedin:<br />
-                    <A href="https://www.linkedin.com/in/therese-rosvall">https://www.linkedin.com/in/therese-rosvall</A></P>
+                    <AFooter href="https://www.linkedin.com/in/therese-rosvall">https://www.linkedin.com/in/therese-rosvall</AFooter></P>
 
             </Contact>
         </Footer>

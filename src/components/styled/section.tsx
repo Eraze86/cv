@@ -5,7 +5,6 @@ export const SectionHome= styled.section`
 display: flex;
 flex-direction: column;
 width: 100%;
-
 @media (min-width: 768px) {
     flex-direction: row;
     margin: 1rem;
@@ -18,17 +17,16 @@ scroll-margin-top: 4rem;
 display: flex;
 flex-direction: column;
 justify-content: center;
-padding: 1rem;
-margin: 1rem;
 @media (min-width: 768px) {
     flex-direction: row;
     flex-wrap: wrap;
+    padding: 1rem;
+margin: 1rem;
 }`
 
 export const SectionEd= styled.section`
 scroll-margin-top: 4rem;
 display: flex;
-
 flex-direction: column;
 @media (min-width: 768px) {
     flex-direction: row;

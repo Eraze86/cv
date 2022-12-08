@@ -1,6 +1,6 @@
-import { ImgPort, ImgSingel } from "./styled/img"
+import { ImgPic, ImgPort} from "./styled/img"
 import { SectionPort } from "./styled/section"
-import { Div, SingelPage, Text } from "./styled/div"
+import { Div, ImgDiv, SingelPage, Text } from "./styled/div"
 import json from "./projekt.json"
 import { useState } from "react"
 import { XButton } from "./styled/button"
@@ -30,7 +30,7 @@ export function Portfolio() {
             })
     }
 
-    let get = project.map((item, i: number) => {
+    let allProjects = project.map((item, i: number) => {
         return (
             <Div className="container" key={i}>
                 <button value={item.id} onClick={show}>{item.Name}</button>
@@ -43,14 +43,14 @@ export function Portfolio() {
 
     return (<>
         <SectionPort id="portfolio">
-                {get}
+                {allProjects}
                 {showDiv && <>
                     <SingelPage>
                         <XButton onClick={() => setShowDiv(false)}>X</XButton>
                         <Text><h3>{singel.name}</h3>
                         <a href={singel.link}>{singel.link}</a><br/>
                        
-                        {singel.images.map((im:any, i:number )=> <ImgPort key={i} src={im} alt="ssa" />)}
+                        <ImgDiv>{singel.images.map((im:any, i:number )=> <ImgPic key={i} src={im} alt="ssa" />)}</ImgDiv>
                         
                         </Text>
                     </SingelPage></>}

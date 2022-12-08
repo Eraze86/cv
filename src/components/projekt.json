@@ -31,14 +31,14 @@
     "id": 5,
     "Name": "My-SQL databas", 
     "link": "https://github.com/Eraze86/notes",
-    "description": "Product 2", 
+    "description": "Skapa egen databas", 
     "image":[ "../img/L1.png", "../img/L2.png", "../img/L3.png"]
   },
   {
     "id": 6,
     "Name": "React - resturang",
     "link": "https://github.com/Eraze86/react-restaurang", 
-    "description": "Product 5", 
+    "description": "Grupparbeta, skapa bokningsystem", 
     "image":[ "../img/R1.png", "../img/R2.png", "../img/R3.png"]
   }
 ]

@@ -10,7 +10,7 @@ align-items: center;
 width: 100vw;
 margin-top: 2rem;
 height: 3rem;
-
+z-index: 5;
 @media (min-width: 768px) {
     display: none;
 }
@@ -20,6 +20,7 @@ display: none;
 @media (min-width: 768px) {
 background: rgba(0, 0, 0, 0.48);
 position: fixed;
+z-index: 5;
 top: 0rem;
 display: flex;
 width: 100vw;

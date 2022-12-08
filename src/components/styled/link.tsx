@@ -9,6 +9,16 @@ margin: 0.5rem;
 }
 `
 
+export const AFooter = styled.a`
+Color: white;
+text-decoration: none;
+
+:hover{
+    margin: 0.5rem;
+    text-decoration:underline;
+}
+`
+
 export const Link = styled.a`
 Color: white;
 font-size: 1.5rem;
