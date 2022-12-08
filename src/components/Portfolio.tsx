@@ -48,7 +48,7 @@ export function Portfolio() {
                     <SingelPage>
                         <XButton onClick={() => setShowDiv(false)}>X</XButton>
                         
-                        <Text><h3>{singel.name}</h3><p>Workin on i slide here</p>
+                        <Text><h3>{singel.name}</h3><p>Workin on a slide here</p>
                         <a href={singel.link}>{singel.link}</a><br/>
                        
                         <ImgDiv>{singel.images.map((im:any, i:number )=> <ImgPic key={i} src={im} alt="ssa" />)}</ImgDiv>
