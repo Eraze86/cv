@@ -4,6 +4,8 @@ export const SectionHome= styled.section`
 
 display: flex;
 flex-direction: column;
+width: 100%;
+
 @media (min-width: 768px) {
     flex-direction: row;
     margin: 1rem;
@@ -14,24 +16,25 @@ export const SectionPort= styled.section`
 Position: relative;
 scroll-margin-top: 4rem;
 display: flex;
-flex-direction: row;
+flex-direction: column;
 justify-content: center;
 padding: 1rem;
 margin: 1rem;
 @media (min-width: 768px) {
-
+    flex-direction: row;
     flex-wrap: wrap;
 }`
 
 export const SectionEd= styled.section`
 scroll-margin-top: 4rem;
 display: flex;
-padding: 2rem;
+
 flex-direction: column;
 @media (min-width: 768px) {
     flex-direction: row;
     justify-content: flex-end;
     margin: 1rem;
+    padding: 2rem;
 }`
 
 export const Article = styled.article`

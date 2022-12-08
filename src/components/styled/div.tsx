@@ -17,6 +17,7 @@ align-items: center;
 
 export const DivMenu = styled.div`
 position: absolute;
+z-index: 1;
 top: -2rem;
 display: flex;
 flex-direction: column;
@@ -39,15 +40,15 @@ font-size: 2rem;
 }`
 
 export const SingelPage = styled.div`
-
+display: flex;
 text-align: right;
 Width: 90vw;
-Height: 50vh;;
+Height: 70vh;
 background-color: #282828;
 border: solid 2px #6D9886;
 border-radius: 1rem;
 position: fixed;
-top: 13rem;
+top: 5rem;
 @media (min-width: 768px) {
  
 }`

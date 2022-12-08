@@ -44,3 +44,14 @@ border: solid 1px black;
 border-radius: 1rem;
 padding: 0.5rem;
 }`
+
+export const ImgSingel= styled.img`
+width: 40rem;
+height: auto;
+margin: 1rem;
+z-index: 2;
+object-fit: contain;
+
+border-radius: 1rem;
+padding: 0.5rem;
+}`
