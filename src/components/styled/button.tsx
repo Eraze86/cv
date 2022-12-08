@@ -26,3 +26,15 @@ background-color: #6D9886;
 @media (min-width: 768px) {
  
 }`
+
+export const ButtonProject = styled.button`
+
+Padding: 0.3rem 1rem;
+font-weight: bold;
+border-radius: 0.5rem;
+cursor: pointer;
+
+background-color: #6D9886;
+@media (min-width: 768px) {
+ 
+}`

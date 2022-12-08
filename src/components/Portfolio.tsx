@@ -3,7 +3,7 @@ import { SectionPort } from "./styled/section"
 import { Div, ImgDiv, SingelPage, Text } from "./styled/div"
 import json from "./projekt.json"
 import { useState } from "react"
-import { XButton } from "./styled/button"
+import { ButtonProject, XButton } from "./styled/button"
 
 export function Portfolio() {
     const [project, setProject] = useState(json);
@@ -33,7 +33,7 @@ export function Portfolio() {
     let allProjects = project.map((item, i: number) => {
         return (
             <Div className="container" key={i}>
-                <button value={item.id} onClick={show}>{item.Name}</button>
+                <ButtonProject value={item.id} onClick={show}>{item.Name}</ButtonProject>
                 {item.description}
          
                 <ImgPort src={item.image[0]} />
@@ -47,11 +47,12 @@ export function Portfolio() {
                 {showDiv && <>
                     <SingelPage>
                         <XButton onClick={() => setShowDiv(false)}>X</XButton>
-                        <Text><h3>{singel.name}</h3>
+                        
+                        <Text><h3>{singel.name}</h3><p>Workin on i slide here</p>
                         <a href={singel.link}>{singel.link}</a><br/>
                        
                         <ImgDiv>{singel.images.map((im:any, i:number )=> <ImgPic key={i} src={im} alt="ssa" />)}</ImgDiv>
-                        
+                      
                         </Text>
                     </SingelPage></>}
         </SectionPort>

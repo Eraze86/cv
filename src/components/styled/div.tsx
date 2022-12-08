@@ -70,12 +70,11 @@ text-align: center;
 export const ImgDiv = styled.div`
 
 display: flex;
-flex-direction: column;
-;
+flex-direction: row;
+flex-wrap: wrap;
 justify-content: center;
 
 @media (min-width: 768px) {
-  flex-direction: row;
-  flex-wrap: wrap;
+
 }`
 
