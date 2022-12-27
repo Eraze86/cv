@@ -52,10 +52,9 @@ padding: 0.5rem;
 export const ImgPic = styled.img`
 
 
-width: 8rem;
+width: 90%;
 margin: 0.5rem;
 @media (min-width: 768px) {
-    
- width: 24rem;
+    width: 70%;
 
 }`

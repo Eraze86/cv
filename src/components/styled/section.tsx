@@ -15,13 +15,11 @@ export const SectionPort= styled.section`
 Position: relative;
 scroll-margin-top: 4rem;
 display: flex;
-flex-direction: column;
-justify-content: center;
+flex-direction: row;
 @media (min-width: 768px) {
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 1rem;
+padding: 1rem;
 margin: 1rem;
+
 }`
 
 export const SectionEd= styled.section`
