@@ -1,47 +1,40 @@
-import { Contact, Footer } from "./styled/footer";
-import { Header, HeaderDiv } from "./styled/header";
-import { ImgLeaf, ImgMe } from "./styled/img";
-import { AFooter } from "./styled/link";
-import { H2,  P } from "./styled/text";
-import me from "../components/assets/profilbild.jpg"
-import  leaf from "../components/assets/leaf.jpg";
+import { Experience } from "./Experience";
 import { Home } from "./Home";
-import { Education } from "./education";
 import { Portfolio } from "./Portfolio";
-import { Menu } from "./menu";
-import { Construct } from "./styled/div";
+import linkedin from "../assets/linkedin.png";
+import git from "../assets/github-logo.png";
 
+import logo from "../assets/T.png";
+import { Outlet } from "react-router-dom";
 
 export function Layout() {
     return (<>
-        <Header id="home">
-     
-            <HeaderDiv>
-          <ImgLeaf src={leaf}></ImgLeaf>
-            
-               <Menu/>
-            </HeaderDiv>
-        </Header>
-        <Home/>
-        <Education/>
-        <Portfolio/>
-        <Contact/>
+        <header id="home" className="h-28   ">
+            <img className="p-2 absolute h-40 z-10" src={logo}></img>
+          
+                <div className="justify-center flex flex-col sm:flex-row h-full px-8 sm:items-center items-end sm:justify-end">
+                <div className="flex mb-2 sm:mb-0">
+                    <a className="mr-6 w-8 h-8" href="https://github.com/Eraze86"><img src={git}/></a>
+
+                    <a className="sm:mr-6 w-8 h-8" href="https://www.linkedin.com/in/therese-rosvall"><img src={linkedin}/></a>
+                    </div>
+                <div className="text-right text-black">
+                    <p>Tel: +46704664185</p>
+                    <p>Email: Therese.rosvall@hotmail.se</p>
+                </div>
+
+            </div>
+        </header>
+        <main className=" bg-[#1D5769]">
+            <Home />
+            <Experience />
+            <Portfolio />
       
-        <Footer id="contact">
-        <H2>Kontakta</H2>
-            <Contact>
-                <ImgMe src={me} />
-                <P>Therese Rosvall<br />
-                    Therese.rosvall@hotmail.se<br />
-                    0704664185</P>
 
-                <P>Github:<br />
-                    <AFooter href="https://github.com/Eraze86">https://github.com/Eraze86</AFooter></P>
-                <P>Linkedin:<br />
-                    <AFooter href="https://www.linkedin.com/in/therese-rosvall">https://www.linkedin.com/in/therese-rosvall</AFooter></P>
-
-            </Contact>
-        </Footer>
+        </main>
+        <footer className="text-black h-20 text-center">
+<p>Copyright @ Therese rosvall</p>
+        </footer>
     </>)
 
 }
