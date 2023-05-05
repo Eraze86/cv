@@ -7,7 +7,7 @@ export function Experience() {
                     <li>
                         <h4>FRONTEND DEVELOPER </h4>
                         <p>H2021–V2023</p>
-                        <p>Vi har fått arbeta med grunderna Html, Css och Sass.
+                        <p>Vi har fått arbeta med grunderna Html, Css, Sass, Github.
                             Provat på både React och Angular, API anrop, No-sql och Sql Databaser,
                             Ux-design, Scrum, styled-comonents mm. Jag har även valt att fördjupa mig mer i Tailwind och React
                             samt arbetat mer med Mongodb i mitt examensarbeta.
