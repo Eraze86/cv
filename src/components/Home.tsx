@@ -4,8 +4,8 @@ export function Home() {
 
 
   return (<>
-    <section className="flex flex-col md:flex-row h-full  ">
-      <article className="md:w-4/6 pt-12 lg:px-12 xl:px-36 ">
+    <section className="flex flex-col md:flex-row h-full items-center justify-center ">
+      <article className="md:w-4/6 pt-12  lg:px-12 xl:px-36 ">
         <h2 className="text-white">Vem är jag?</h2>
 <div className="">
 <span>Är en kreativ och lösningsorienterad person med lätthet för att söka information. 
@@ -23,7 +23,7 @@ Arbetar gärna med React, CSS, Html och fördjupar mig i detta. Vill skapa
 sidor som är tillgängliga för alla, lättnavigerade och visuellt tilltalande.<br/><br/>
 </span></div>
       </article>
-      <article className="md:w-2/6 pb-12 md:pb-0 px-0 h-full flex items-center">
+      <article className="md:w-2/6 pb-12 md:pb-0 px-0 h-full  ">
         <img src={image} className="max-h-[200px] md:max-h-[500px]   " />
       </article>
       

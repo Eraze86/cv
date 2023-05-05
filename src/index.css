@@ -32,9 +32,8 @@ li{
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
   justify-items: center;
-  gap: 1rem;
-  margin: 20px;
- 
+  gap: 3rem;
+  
 } 
 .card{
   display:flex;
@@ -48,11 +47,9 @@ li{
   transition: 150ms;
   transform: perspective(1000px) rotateY(var(--rotate-y, 0))
   translateY(var(--translate-y, 0));
-  
-  height: 10rem;
-  width: 20rem;
-  margin: 2rem;
-  
+  height: 13rem;
+  width: 100%;
+  border-radius: 1rem; 
 }
 .card:hover{
   --translate-y: -2px;
@@ -67,6 +64,7 @@ li{
   object-fit:cover;
   background-color:#296f84;
   left: 0;
+
 }
 .front,
 .back{
@@ -81,6 +79,7 @@ li{
   justify-content: center;
   align-items: center;
   text-align: center;
+  border-radius: 1rem; 
 }
 
 .back{

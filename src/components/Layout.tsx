@@ -12,7 +12,7 @@ export function Layout() {
         <header id="home" className="h-28   ">
             <img className="p-2 absolute h-40 z-10" src={logo}></img>
           
-                <div className="justify-center flex flex-col sm:flex-row h-full px-8 sm:items-center items-end sm:justify-end">
+                <div className="justify-center flex flex-col sm:flex-row h-full px-2 md:px-8 sm:items-center items-end sm:justify-end">
                 <div className="flex mb-2 sm:mb-0">
                     <a className="mr-6 w-8 h-8" href="https://github.com/Eraze86"><img src={git}/></a>
 
