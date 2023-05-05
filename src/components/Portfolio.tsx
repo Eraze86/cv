@@ -42,7 +42,7 @@ export function Portfolio() {
 
   return (
     <>
-      <section className="card-grid px-24  xl:px-36 py-12">{allProjects}</section>
+      <section className="card-grid px-4 sm:px-12  xl:px-36 py-12">{allProjects}</section>
     </>
   );
 }
