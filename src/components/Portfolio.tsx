@@ -24,7 +24,8 @@ export function Portfolio() {
     return (
 <div key={i} className={`card ${isFlipped ? "flip" : ""}`} onClick={() => showInfo(i)}>
   
-    <img className="front" src={item.image}></img>
+    <img className="front  w-[100%];
+  h-[100%] object-cover" src={item.image}></img>
   
   
   <div className="back text-black">
@@ -41,7 +42,7 @@ export function Portfolio() {
 
   return (
     <>
-      <section className="card-grid">{allProjects}</section>
+      <section className="card-grid px-24  xl:px-36 py-12">{allProjects}</section>
     </>
   );
 }
