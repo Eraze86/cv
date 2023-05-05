@@ -1,69 +1,47 @@
-import { ImgPic, ImgPort} from "./styled/img"
-import { SectionPort } from "./styled/section"
-import { Div, ImgDiv, SingelPage, Text } from "./styled/div"
 import json from "./projekt.json"
 import { useState } from "react"
-import { ButtonProject, XButton } from "./styled/button"
-import { gsap } from "gsap";
+
+
 export function Portfolio() {
-    const [project, setProject] = useState(json);
-    const [showDiv, setShowDiv] = useState(false)
-    const [showProjects, setShowProjects] = useState(true)
-    const [singel, setSingel] = useState<any>([]);
+  const [flippedIndex, setFlippedIndex] = useState(-1);
+  const [projects] = useState(json);
+  const [flip, setFlip] = useState(false)
 
-    function xClicked(){
-        setShowDiv(false)
-        setShowProjects(true)
+  function showInfo(index: number) {
+    if (flippedIndex === index) {
+      setFlippedIndex(-1);
+      setFlip(true)
+    } else {
+
+      setFlippedIndex(index);
+      setFlip(false)
     }
-    function show(e: any) {
-        setShowDiv(true)
-        setShowProjects(false)
-        project.forEach(function (box) {
-     
-                if(box.id == e.target.value){
-                    let sum = {
-                        id: box.id,
-                        name: box.Name,
-                        link: box.link, 
-                        description: box.description, 
-                        images: box.image
-                      };
-                      setSingel(sum)
-                      
-                }else{
-              
-                }
-            })
-    }
+  }
 
-    let allProjects = project.map((item, i: number) => {
-        return (
-            <Div key={i}>
-                <div className="container">
-                <h4>{item.Name}</h4>
-                {item.description}
-                </div>
-                <ButtonProject value={item.id} onClick={show}>Pil här</ButtonProject>
-                
-            </Div>
-        )
-    })
+  let allProjects = projects.map((item, i: number) => {
+    const isFlipped = i === flippedIndex;
 
-    return (<>
-        <SectionPort id="portfolio">
-        {showProjects && <><div>{allProjects}</div> </>}               
-                {showDiv && <>
-                    <SingelPage>
-                        <XButton onClick={xClicked}>X</XButton>
-                        
-                        <Text><h3>{singel.name}</h3>
-                        <a href={singel.link}>{singel.link}</a><br/>
-                       
-                        <ImgDiv>{singel.images.map((im:any, i:number )=> <ImgPic key={i} src={im} alt="ssa" />)}</ImgDiv>
-                      
-                        </Text>
-                    </SingelPage></>}
-        </SectionPort>
+    return (
+<div key={i} className={`card ${isFlipped ? "flip" : ""}`} onClick={() => showInfo(i)}>
+  
+    <img className="front" src={item.image}></img>
+  
+  
+  <div className="back text-black">
+    <h4 >{item.name}</h4>
+    <p>{item.description}</p>
+    <a href={item.gitlink}>Github</a>
+    <div className="flex w-full justify-center">
+    <a className="px-4" href={item.pagelink}>{item.linkname}</a>
+    <a className="" href={item.extraLink}>{item.linkname2}</a></div>
+  </div>
+</div>
+    );
+  });
 
-    </>)
+  return (
+    <>
+      <section className="card-grid">{allProjects}</section>
+    </>
+  );
 }

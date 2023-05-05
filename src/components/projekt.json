@@ -1,44 +1,45 @@
 [
+
   {
     "id": 1,
-    "Name": "Kubikräknare", 
-    "link": "https://cubic-calculator.vercel.app/",
-    "description": "Sammarbete med Mikaela", 
-    "image":[ "../img/K1.png", "../img/K2.png" ]
+    "name": "Angular webshop",
+    "gitlink":"https://github.com/Eraze86/angular-webshop",
+    "description": "Arbetade med Angular",
+    "image": "../img/A1.png"
   },
   {
     "id": 2,
-    "Name": "HemmaOdlat", 
-    "link": "https://github.com/Eraze86/hemmaodla",
+    "name": "HemmaOdlat", 
+    "gitlink":"https://github.com/Eraze86/hemmaodla",
     "description": "Eget projekt", 
-    "image":[ "../img/H1.png", "../img/H2.png", "../img/H3.png", "../img/H4.png"]
+    "image":"../img/H2.png"
   },
   {
     "id": 3,
-    "Name": "Css & Sass",
-    "link": "",
-    "description": "Lärde oss hantera styling", 
-    "image":[ "../img/css1.png", "../img/css2.png", "../img/css3.png"]
+    "name": "React - resturang",
+    "gitlink":"https://github.com/Eraze86/react-restaurang",
+    "description": "Grupparbeta, skapa bokningsystem med React", 
+    "image":"../img/R1.png"
   },
   {
     "id": 4,
-    "Name": "Angular webshop",
-    "link": "https://github.com/Eraze86/angular-webshop",
-    "description": "Testade på att arbeta med Angular",
-    "image":[ "../img/A1.png", "../img/A2.png", "../img/A3.png", "../img/A4.png"]
+    "name": "Kubikräknare", 
+    "pagelink": "https://cubic-calculator.vercel.app/",
+    "gitlink":"https://github.com/Eraze86/cubic-calculator",
+    "linkname": "Hemsida",
+    "description": "Sammarbete med Mikaela, Javascript", 
+    "image":"../img/K2.png"
   },
   {
     "id": 5,
-    "Name": "My-SQL databas", 
-    "link": "https://github.com/Eraze86/notes",
-    "description": "Skapa egen databas", 
-    "image":[ "../img/L1.png", "../img/L2.png", "../img/L3.png"]
-  },
-  {
-    "id": 6,
-    "Name": "React - resturang",
-    "link": "https://github.com/Eraze86/react-restaurang", 
-    "description": "Grupparbeta, skapa bokningsystem", 
-    "image":[ "../img/R1.png", "../img/R2.png", "../img/R3.png"]
+    "name": "Ooak9",
+    "pagelink": "https://ooak9.vercel.app/",
+    "extraLink": "https://ooak9.vercel.app/admin",
+    "gitlink":"https://github.com/Eraze86/OoaK9",
+    "linkname": "Hemsida",
+    "linkname2": "Adminsida",
+    "description": "Examensarbete, kundsida och adminsida, mongodb. User and psw: admin (databas tar tid att ladda)", 
+    "image": "../img/O1.png"
   }
+
 ]
