@@ -24,8 +24,10 @@ export function Portfolio() {
     return (
 <div key={i} className={`card ${isFlipped ? "flip" : ""}`} onClick={() => showInfo(i)}>
   
-    <img className="front  w-[100%];
-  h-[100%] object-cover" src={item.image}></img>
+    <div className="front ">
+      <img className="rounded-t-[1rem] w-[100%] h-[100%] object-cover" src={item.image}/>
+      <p className="rounded-b-[1rem] bg-black z-10 w-full text-center">Click me</p>
+      </div>
   
   
   <div className="back text-black">
